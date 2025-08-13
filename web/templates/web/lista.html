@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Empleados</title>
+</head>
+<body>
+    <h1>Lista de Empleados</h1>
+    <ul>
+        {% for empleado in empleados %}
+            <li>{{ empleado }}</li>
+        {% empty %}
+            <li>No hay empleados registrados.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
